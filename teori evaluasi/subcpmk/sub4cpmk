@@ -1,0 +1,56 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+struct buku {
+    string Judul;
+    string Penulis; 
+    string genre; 
+    int tahunTerbit; 
+    int harga;
+    int halaman;
+};
+
+int main() {
+    buku myBooks[3]; 
+
+    // Mengisi data untuk 3 buku
+    myBooks[0].Judul = "Godfall";
+    myBooks[0].Penulis = "Jeph Loeb";
+    myBooks[0].genre = "Superhero";
+    myBooks[0].tahunTerbit = 2004;
+    myBooks[0].harga = 200000;
+    myBooks[0].halaman = 112;
+
+
+    myBooks[1].Judul = "Crush";
+    myBooks[1].Penulis = "Josephine Abigail";
+    myBooks[1].genre = "Romantis";
+    myBooks[1].tahunTerbit = 2020;
+    myBooks[1].harga = 89100;
+    myBooks[1].halaman = 360;
+
+
+    myBooks[2].Judul = "Cuan Trading Pakai Fibonacci";
+    myBooks[2].Penulis = "Catherine Wiliam";
+    myBooks[2].genre = "Investasi";
+    myBooks[2].tahunTerbit = 2022;
+    myBooks[2].harga = 70400;
+    myBooks[2].halaman = 104;
+
+    cout << "======================================================================================================================" << endl;
+    cout << "| " << setw(10) << "No." << " | " << setw(30) << "Judul" << " | " << setw(20) << "Penulis" << " | " << setw(15) << "Genre" << " | " << setw(15) << "Tahun Terbit" << " | " << setw(10) << "Harga" << " | " << setw(10) << "Halaman" << " |" << endl;
+    cout << "======================================================================================================================" << endl;
+    for (int i = 0; i < 3; i++) {
+        cout << "| " << setw(10) << i + 1;
+        cout << " | " << setw(30) << myBooks[i].Judul;
+        cout << " | " << setw(20) << myBooks[i].Penulis;
+        cout << " | " << setw(15) << myBooks[i].genre;
+        cout << " | " << setw(15) << myBooks[i].tahunTerbit;
+        cout << " | " << setw(10) << myBooks[i].harga;
+        cout << " | " << setw(10) << myBooks[i].halaman << " |" << endl;
+    }
+    cout << "======================================================================================================================" << endl;
+
+    return 0;
+}
