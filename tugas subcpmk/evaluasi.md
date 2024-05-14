@@ -794,6 +794,8 @@ int main() {
 ~~~
 
 ## output :
+![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/9b0c8a49-5ba2-4c91-88fb-ec22bb3e9f66)
+
 ![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/41544b7e-d1c7-4215-8c1a-5748a2a5724e)
 
 ## interprestasikan:
