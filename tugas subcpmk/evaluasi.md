@@ -723,5 +723,16 @@ tampilkan() untuk Menampilkan semua elemen di dalam stack jika tidak kosong.
 Fungsi main() Di dalam fungsi main(), program menyediakan menu interaktif untuk pengguna agar dapat melakukan operasi pada stack: Push: Menambahkan nilai ke stack jika tidak penuh.
 Pop untuk Menghapus elemen teratas dari stack jika tidak kosong.
 Berdasarkan input pengguna, program akan memanggil metode yang sesuai dari objek stack (s).
+Menampilkan Menu dan Memilih Push:
+Program menampilkan menu operasi stack.
+Pengguna memilih opsi 1 untuk menambahkan nilai ke stack.
+Program meminta pengguna memasukkan nilai yang ingin ditambahkan.
 
+masukkan nilai 1 (push) dengan nilai 33, 77, 56, 89, dan 45.
 
+opearsi stack pop : 45 terhapus dari stack. 
+
+operasi stack tampilkkan untuk menampilkan hasil : 33, 77, 56, dan 89.
+
+ operasi stack keluar Φ░óΦ░ó.
+ 
