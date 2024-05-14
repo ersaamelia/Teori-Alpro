@@ -217,6 +217,88 @@ Array yang akan dicari adalah 2 3 9 10 18 40.
 Target yang dicari adalah angka 10.
 Setelah proses pencarian, target ditemukan pada index ke-3. (Index dimulai dari 0).
 
+### sub3cpmk2
+2. Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut!
+
+kodingan 
+~~~C++
+#include <iostream>
+using namespace std;
+
+// Fungsi untuk melakukan binary search
+int binary_search(int arr[], int n, int target) {
+    int low = 0;
+    int high = n - 1;
+    
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        
+        // Jika target ditemukan di tengah
+        if (arr[mid] == target)
+            return mid;
+        
+        // Jika target lebih kecil, cari di setengah kiri array
+        else if (arr[mid] > target)
+            high = mid - 1;
+        
+        // Jika target lebih besar, cari di setengah kanan array
+        else
+            low = mid + 1;
+    }
+    
+    // Jika target tidak ditemukan
+    return -1;
+}
+
+int main() {
+    int arr[] = {2, 3, 9, 10, 18, 40};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int target = 10;
+
+    cout << "Array yang akan di cari: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+    
+    cout << "Target: " << target << endl;
+
+    // Panggil fungsi binary_search
+    int result = binary_search(arr, n, target);
+    if (result != -1)
+        cout << "Target ditemukan pada index: " << result << endl;
+    else
+        cout << "Target tidak ditemukan" << endl;
+
+    return 0;
+}
+~~~
+
+## ouput :
+![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/47008dba-d780-4813-88ec-b089bc92d254)
+
+## interprestasikan :
+#include <iostream> untuk Mengimpor library input-output untuk menggunakan cout dan cin.
+using namespace std:: untuk  Menghindari penulisan std:: di depan cout, cin, dan endl
+int binary_search(int arr[], int n, int target): Fungsi yang menerima array arr dengan panjang n dan target yang ingin dicari target. Mengembalikan indeks target jika ditemukan, atau -1 jika tidak ditemukan.
+int low = 0, high = n - 1 untuk Menginisialisasi batas bawah (low) dan batas atas (high) dari pencarian.
+while (low <= high) untuk Loop yang berlanjut selama low kurang dari atau sama dengan high.
+int mid = low + (high - low) / 2 untuk Menghitung indeks tengah untuk menghindari overflow.
+if (arr[mid] == target) untuk Jika elemen tengah adalah target, mengembalikan indeks tengah.
+else if (arr[mid] > target) untuk Jika elemen tengah lebih besar dari target, mempersempit pencarian ke setengah kiri (high = mid - 1).
+else untuk Jika elemen tengah lebih kecil dari target, mempersempit pencarian ke setengah kanan (low = mid + 1).
+return -1 Jika target tidak ditemukan dalam loop, mengembalikan -1.
+
+Mencetak Array dan Target:
+
+Program mencetak elemen-elemen dalam array: 2 3 9 10 18 40.
+Program mencetak target yang akan dicari: 10.
+Hasil Binary Search:
+
+Fungsi binary_search dipanggil dengan target 10.
+Fungsi menemukan target 10 pada indeks 3.
+Program mencetak pesan: "Target ditemukan pada index: 3
+
 
 ## Sub4CPMK
 
