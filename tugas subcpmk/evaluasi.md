@@ -110,7 +110,7 @@ int main() {
 ## output :
 ![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/e7b7d19f-1f04-4054-9f1e-68c19bb9a4aa)
 
-### interprestasikan: 
+## interprestasikan: 
 terdapat data [9, 18, 2, 40, 3, 10]
 Pada iterasi pertama, elemen terkecil (2) dipindahkan ke posisi pertama array.
 Hasilnya adalah: 9 2 18 3 10 40.
@@ -125,7 +125,7 @@ Iterasi terakhir juga tidak memerlukan pertukaran elemen, karena array sudah ter
 Hasil akhir: 2 3 9 10 18 40.
 
 
-## SubCPMK3
+### SubCPMK3
 1. Terdapat dua algoritma searching yang umum digunakan yakni, Binary Search dan Linear Search. Berikan penjelasan alur dari masing-masing algoritma tersebut, dan jelaskan runtime dari best case dan worst case masing-masing algoritma! 
 
 Jawab:
@@ -151,74 +151,6 @@ algoritma searching yang bekerja dengan cara membandingkan setiap elemen dalam a
 Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut.
 
 Searching adalah metode pencarian informasi dalam suatu aplikasi dengan suatu kunci (key). Pencarian diperlukan untuk mencari informasi khusus dari table pada saat lokasi yang pasti dari informasi tersebut sebelumnya tidak diketahui.
-
-kodingan 
-
-~~~C++
-#include <iostream>
-using namespace std;
-
-// Fungsi untuk melakukan binary search
-int binary_search(int arr[], int n, int target) {
-    int low = 0;
-    int high = n - 1;
-    
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        
-        if (arr[mid] == target)
-            return mid;
-        
-        
-        else if (arr[mid] > target)
-            high = mid - 1;
-        
-        
-        else
-            low = mid + 1;
-    }
-    
-    
-    return -1;
-}
-
-int main() {
-    int arr[] = {2, 3, 9, 10, 18, 40};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int target = 10;
-
-    cout << "Array yang akan di cari: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-    
-    cout << "Target: " << target << endl;
-
-    
-    int result = binary_search(arr, n, target);
-    if (result != -1)
-        cout << "Target ditemukan pada index: " << result << endl;
-    else
-        cout << "Target tidak ditemukan" << endl;
-
-    return 0;
-}
-~~~
-
-### Output :
-![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/517788ad-580b-4e1c-8c7c-f81d19a534cf)
-
-### interprestasikan :
-fungsi binary search untuk menerima array yang sudah terurut, panjang array, dan nilai target yang ingin dicari sebagai parameter. variabel low untu indes awal dari sub array dan high untu indeks akhir. variabel mid untu indes tengah. Jika target ditemukan, fungsi mengembalikan indeksnya, jika tidak, fungsi mengembalikan -1. 
-
-Array yang akan dicari adalah 2 3 9 10 18 40.
-Target yang dicari adalah angka 10.
-Setelah proses pencarian, target ditemukan pada index ke-3. (Index dimulai dari 0).
-
-### sub3cpmk2
-2. Buatlah fungsi dari salah satu algoritma searching pada soal nomor 1, dan berikan penjelasan pada program tersebut!
 
 kodingan 
 ~~~C++
