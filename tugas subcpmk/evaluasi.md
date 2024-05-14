@@ -622,7 +622,8 @@ ubahBelakang(string nama, string nim) untuk Mengubah data pada node terakhir dar
 ubahTengah(string nama, string nim, int posisi) untuk Mengubah data pada node pada posisi tertentu dari linked list.
 
 ### Subcpmk6
-# 1. Tulislah sebuah program dari operasi stack seperti pop, push, isEmpty, isFull, dll(min 5)!
+# 1.
+Tulislah sebuah program dari operasi stack seperti pop, push, isEmpty, isFull, dll(min 5)!
 
 kodingan 
 ~~~C++
