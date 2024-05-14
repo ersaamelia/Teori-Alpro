@@ -712,5 +712,16 @@ int main() {
 ~~~
 
 ## output :
+![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/41544b7e-d1c7-4215-8c1a-5748a2a5724e)
+
+## interprestasikan:
+Metode isEmpty() untuk Mengembalikan true jika stack kosong (top == -1), dan false jika tidak.
+isFull() untuk Mengembalikan true jika stack penuh (top == MAX_SIZE - 1), dan false jika tidak.
+push(int value) untuk Menambahkan value ke stack jika tidak penuh, dan mencetak pesan berhasil.
+pop() untuk Menghapus elemen teratas dari stack jika tidak kosong, dan mencetak elemen yang dihapus.
+tampilkan() untuk Menampilkan semua elemen di dalam stack jika tidak kosong.
+Fungsi main() Di dalam fungsi main(), program menyediakan menu interaktif untuk pengguna agar dapat melakukan operasi pada stack: Push: Menambahkan nilai ke stack jika tidak penuh.
+Pop untuk Menghapus elemen teratas dari stack jika tidak kosong.
+Berdasarkan input pengguna, program akan memanggil metode yang sesuai dari objek stack (s).
 
 
