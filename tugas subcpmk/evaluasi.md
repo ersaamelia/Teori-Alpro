@@ -305,8 +305,17 @@ int main() {
 ![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/1d9f493d-9431-42ea-b8bf-86c37ee83dd6)
 
 ## interprestasikan :
-program struct buku ada beberapa variabel seperti judul, penulis, tahun terbit, harga, dan jumlah halaman. program array myBooks berisi 3 objek yaitu : godfall, crush, dan cuan trading pakai fibonacci. program fungsi setw dari header <iomanip>. untuk menentukan lebar kolom yang tetap. untuk pemisah tabel di tampilkan menggunakan karakter '-'.
+program struct buku ada beberapa variabel seperti judul, penulis, tahun terbit, harga, dan jumlah halaman. program array myBooks berisi 3 objek yaitu : godfall, crush, dan cuan trading pakai fibonacci. program fungsi setw dari header <iomanip>. untuk menentukan lebar kolom yang tetap. untuk pemisah tabel di tampilkan menggunakan karakter '-'.  sebuah struct bernama buku (artinya buku). Struct adalah tipe data yang digunakan untuk mengelompokkan variabel-variabel terkait. Dalam struct buku, kita memiliki beberapa variabel untuk menyimpan informasi tentang sebuah buku, yaitu:
+Judul: Judul buku (bertipe string)
+Penulis: Penulis buku (bertipe string)
+genre: Genre buku (bertipe string)
+tahunTerbit: Tahun terbit buku (bertipe integer)
+harga: Harga buku (bertipe integer)
+halaman: Jumlah halaman buku (bertipe integer)
+mendeklarasikan sebuah array bernama myBooks yang dapat menyimpan 3 elemen bertipe buku. menggunakan loop for untuk iterate melalui setiap elemen dalam array myBooks. Loop tersebut berjalan sebanyak 3 kali (sesuai dengan jumlah elemen dalam array). Di dalam loop, kita  mengakses informasi dari setiap buku menggunakan indeks i dan kemudian menampilkannya ke konsol dengan format yang sama seperti pada header tabel.
 
+ outputnya berupa tabel yang berisi informasi tentang buku. Tabel tersebut memiliki kolom-kolom untuk:
+No. (Nomor), Judul, Penulis, Genre, Tahun Terbit, Harga, dan Halaman. Tabel ini berisi tiga baris data, masing-masing mewakili sebuah buku yang berbeda. Sebagai contoh, baris pertama menunjukkan bahwa ada sebuah buku berjudul "Godfall" yang ditulis oleh Jeph Loeb bergenre Superhero. Buku tersebut diterbitkan pada tahun 2004, harganya Rp200.000, dan memiliki 112 halaman. Kemungkinan besar output ini dihasilkan dari menjalankan program yang membaca data tentang buku dari sebuah file dan kemudian memformatnya ke dalam tabel. 
 
 ## SUBCPMK5 
 
