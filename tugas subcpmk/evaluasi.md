@@ -105,7 +105,7 @@ int main() {
     
     return 0;
 }
-~
+~~~
 
 ## output :
 ![image](https://github.com/ersaamelia/Teori-Alpro/assets/157209170/e7b7d19f-1f04-4054-9f1e-68c19bb9a4aa)
